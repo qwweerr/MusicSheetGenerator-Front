@@ -1,8 +1,7 @@
 <div class="board" fxLayout="row" fxFlexFill>
   <div fxFlex calss="container"> 
     <mat-selection-list #instruments>
-      <mat-list-option *ngFor="let instrument of typesOfInstruments"
-                        [ngClass]="{'special-class': selectedOptions.includes(filter.value) }" >
+      <mat-list-option *ngFor="let instrument of typesOfInstruments" >
         {{instrument}}
       </mat-list-option>
     </mat-selection-list>

@@ -3,10 +3,6 @@
 }
 
 .container{
-  background-color: rgb(158, 32, 32);
+  background-color: rgb(39, 28, 192);
 }
 
-.special-class{
-  background-color: red;  
-  pointer-events: none;
-}
