@@ -1,4 +1,13 @@
-<div fxLayout="row">
-  <div>1. One</div> 
-  <div>2. Two</div>
+<div class="board" fxLayout="row" fxFlexFill>
+  <div fxFlex calss="container"> 
+    <mat-selection-list #instruments>
+      <mat-list-option *ngFor="let instrument of typesOfInstruments"
+                        [ngClass]="{'special-class': selectedOptions.includes(filter.value) }" >
+        {{instrument}}
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+  <div fxFlex calss="container"> 
+   <app-audioplayer></app-audioplayer>
+  </div>
 </div>
