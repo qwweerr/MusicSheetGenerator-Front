@@ -1,3 +1,9 @@
-<table>
+<div fxLayout="column" class="form-group">
+    <label for="file">
+        Choose File
+    </label>
     
-</table>
+    <input type="file"
+           id="file"
+           (change)="handleFileInput($event.target.files)">
+</div>

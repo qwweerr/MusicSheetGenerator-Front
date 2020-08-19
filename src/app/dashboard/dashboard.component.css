@@ -12,7 +12,7 @@ mat-list-option {
 }
 
 mat-list-option[aria-selected="true"] {
-  background: rgba(8, 177, 177, 0.7);
+  background: rgba(188, 71, 218, 0.7);
 }
 
 

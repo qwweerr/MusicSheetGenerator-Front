@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './audioupload.component.html',
   styleUrls: ['./audioupload.component.css']
 })
-export class AudiouploadComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class AudiouploadComponent {
+  fileToUpload: File = null;
+  handleFileInput(files: FileList) {
+    this.fileToUpload = files.item(0);
   }
+  
 
 }
