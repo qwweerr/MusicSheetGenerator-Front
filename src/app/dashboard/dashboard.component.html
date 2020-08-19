@@ -1,12 +1,15 @@
 <div class="board" fxLayout="row" fxFlexFill>
-  <div fxFlex calss="container"> 
-    <mat-selection-list #instruments>
-      <mat-list-option *ngFor="let instrument of typesOfInstruments" >
-        {{instrument}}
-      </mat-list-option>
-    </mat-selection-list>
+  <div fxFlex class="container"> 
+    <div fxFlex class="column">
+      <mat-selection-list #instruments>
+        <mat-list-option *ngFor="let instrument of typesOfInstruments" 
+                          [value]="instrument">
+          {{instrument}}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
   </div>
-  <div fxFlex calss="container"> 
+  <div fxFlex class="container"> 
    <app-audioplayer></app-audioplayer>
   </div>
 </div>

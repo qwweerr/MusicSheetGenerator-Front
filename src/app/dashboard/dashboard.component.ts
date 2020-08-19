@@ -1,7 +1,5 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTable } from '@angular/material/table';
+import { MatSelectionList, MatSelectionListChange, MatListOption } from '@angular/material/list';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,4 +8,13 @@ import { MatTable } from '@angular/material/table';
 })
 export class DashboardComponent {
   typesOfInstruments: string[] = ['Violin', 'Paino', 'Guitar'];
+
+  @ViewChild(MatSelectionList) instruments: MatSelectionList;
+
+  ngOnInit(){
+      this.instruments.selectionChange.subscribe((i: MatSelectionListChange) => {          
+          this.instruments.deselectAll();
+          i.option.selected = true;
+      });
+  }
 }
