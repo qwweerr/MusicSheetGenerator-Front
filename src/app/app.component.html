@@ -1,14 +1,17 @@
-<app-header-bar></app-header-bar>
 
-<mat-sidenav-container
-    class="container" (backdropClick)="close('backdrop')" *ngIf="shouldRun">
-  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
-    <app-musicsheet></app-musicsheet>
-    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
-  </mat-sidenav>
 
-  <mat-sidenav-content>
-    <p><button mat-button (click)="sidenav.open()">Open</button></p>
-    <app-musicsheet></app-musicsheet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<mat-drawer-container class="container" autosize>
+    <p>
+        <mat-toolbar color="primary">
+          <button mat-flat-button color="primary" (click)="drawer.toggle()" >{{data.title}}</button>
+          <span class="header-spacer"></span>
+          <button mat-fab color="primary" class="share-icon" aria-label="share icon-button with share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+        </mat-toolbar>
+    </p>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <app-typelist></app-typelist>
+    </mat-drawer>
+  
+  </mat-drawer-container>

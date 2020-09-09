@@ -10,7 +10,6 @@ import {MatSortModule} from '@angular/material/sort';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
-import {HeaderBarComponent} from './header-bar/header-bar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MusicsheetComponent} from './musicsheet/musicsheet.component';
@@ -20,7 +19,6 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderBarComponent,
     MusicsheetComponent,
     TypelistComponent,
   ],
