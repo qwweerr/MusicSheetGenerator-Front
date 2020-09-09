@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'MusicGeneratorFront-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('MusicGeneratorFront-app');
+    expect(app.data.title).toEqual('MusicGeneratorFront-app');
   });
 
   it('should render title', () => {
