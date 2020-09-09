@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-musicsheet',
   templateUrl: './musicsheet.component.html',
-  styleUrls: ['./musicsheet.component.css']
+  styleUrls: ['./musicsheet.component.scss']
 })
 export class MusicsheetComponent implements OnInit {
 

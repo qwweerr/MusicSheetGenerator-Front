@@ -1,0 +1,11 @@
+@mixin app-theme($theme) {
+
+    $primary: map-get($theme, primary);
+    $foreground: map-get($theme, foreground);
+
+    .mat-flat-button {
+        background-color: mat-color($primary, darker);
+        color: mat-color($primary, lighter);
+    }
+    
+}

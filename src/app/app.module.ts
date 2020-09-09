@@ -15,6 +15,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MusicsheetComponent} from './musicsheet/musicsheet.component';
 import {TypelistComponent} from './typelist/typelist.component'
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatListModule,
     MatToolbarModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
