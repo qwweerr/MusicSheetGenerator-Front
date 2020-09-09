@@ -11,11 +11,15 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule} from '@angular/material/icon';
+import { MusicsheetComponent } from './musicsheet/musicsheet.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderBarComponent,
+    MusicsheetComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import { HeaderBarComponent } from './header-bar/header-bar.component';
     MatSortModule,
     FlexLayoutModule,
     MatSelectModule,
-    MatListModule
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

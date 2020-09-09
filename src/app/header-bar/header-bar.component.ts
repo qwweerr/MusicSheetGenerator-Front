@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderBarComponent implements OnInit {
 
+  data={
+    title:'MusicSheetGenerate'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
