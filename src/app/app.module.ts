@@ -10,10 +10,12 @@ import { MatSortModule } from '@angular/material/sort';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
+import { HeaderBarComponent } from './header-bar/header-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderBarComponent,
   ],
   imports: [
     BrowserModule,
