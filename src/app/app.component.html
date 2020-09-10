@@ -1,17 +1,8 @@
 
-
-<mat-drawer-container class="container" autosize>
-    <p>
-        <mat-toolbar color="primary">
-          <button mat-flat-button (click)="drawer.toggle()" >{{data.title}}</button>
-          <span class="header-spacer"></span>
-          <button mat-fab color="primary" class="share-icon" aria-label="share icon-button with share icon">
-            <mat-icon>share</mat-icon>
-          </button>
-        </mat-toolbar>
-    </p>
-    <mat-drawer #drawer class="sidenav" mode="side">
-      <app-typelist></app-typelist>
-    </mat-drawer>
-  
-  </mat-drawer-container>
+  <div class="parent">
+    <header class="pink section">{{data.title}}</header>
+    <div class="left-side blue section" ><app-typelist></app-typelist></div>
+    <main class="section coral" > <app-musicsheet></app-musicsheet></main>
+    <div class="right-side yellow section" >Right Sidebar</div>
+    <footer class="green section">Footer</footer>
+  </div>

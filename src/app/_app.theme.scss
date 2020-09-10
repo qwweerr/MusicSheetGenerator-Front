@@ -14,30 +14,32 @@
         background-color: mat-color($primary, darker);
     }
 
-    .mat-selection-list{
-        width: fit-content;
-    }
-
-    /*container style*/
-    .container {
+    .parent {
         flex: 1 1 auto;
-      }
-      
-    .sidenav-content {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template: auto 1fr auto / auto 1fr auto;
     }
       
-    .sidenav {
-        
-    }
-
-    
-    .header-spacer {
-        flex: 1 1 auto;
+    .header {
+        background-color: darkslategrey;
+        padding: 2rem;
+        grid-column: 1 / 4;
     }
     
+    .left-side {
+        grid-column: 1 / 2;
+    }
+    
+    .main {
+        grid-column: 2 / 3;
+    }
+    
+    .right-side {
+        grid-column: 3 / 4;
+    }
+    
+    .footer {
+        grid-column: 1 / 4;
+    }
     
 }
